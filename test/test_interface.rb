@@ -5,31 +5,18 @@ require './ollivanders/interface'
 
 class TestInterface < Minitest::Test
 
-  def setup elements
-    @elements = elements
+  def setup
+    stored_elements = File.read('./ollivanders/elements.json')
+    elements = JSON.parse(stored_elements, {:symbolize_names => true})
+    @e = elements.values
   end
 
-  # i want the interface to welcome the customer
-  def test_get_wand_method_starts
-    interface = Interface.new
-    assert_output(/Welcome to Ollivander's Wand Shop\n\n/) { interface.get_wand }
+  def test_that_specific_element_values_can_be_called
+    assert_includes @e[0], "Unicorn"
   end
 
-  # then i want it to output options
-  def test_array
-    array_test = [1, 2, 3]
-    assert_equal array_test, [1, 2, 3]
+  def test_that_the_elements_value_array_can_be_printed
+    assert_equal @e[0], ["Unicorn", "Dragon", "Pheonix"]
   end
-
-  def test_prompt_for_key_is_outputted
-    interface = Interface.new
-    assert_output(/What should your wand core be?/) { interface.show_intro }
-  end
-
-  # let them select
-  # def test_user_can_select_an_option
-  #   assert_equal 4, @interface.choose
-  # end
-
 
 end
