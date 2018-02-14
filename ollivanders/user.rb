@@ -13,7 +13,7 @@ module User
 
     def thank_you
       time = Time.now.strftime("%I:%M%p")
-      puts "\nThank you, We just finished fixing your wand at #{time}."
+      puts "\nThank you, We finished fixing your wand at #{time}. That'll be 100 Galleons"
     end
 
 end
