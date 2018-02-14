@@ -14,14 +14,10 @@ class Interface
     # we want to run the interface by calling the below methods in order
     def get_customer_info
       puts WELCOME
-      show_intro key[0]
-      choose_element elements[0]
-      show_intro key[1]
-      choose_element elements[1]
-      show_intro key[2]
-      choose_element elements[2]
-      show_intro key[3]
-      choose_element elements[3]
+      step 0
+      step 1
+      step 2
+      step 3
       thank_you
     end
 

@@ -12,4 +12,9 @@ module Options
       end
     end
 
+    def step n
+      show_intro key[n]
+      choose_element elements[n]
+    end
+
 end
