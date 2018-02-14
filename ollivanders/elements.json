@@ -1,0 +1,6 @@
+{
+  "core": ["Unicorn", "Dragon", "Pheonix"],
+  "material": ["Alder", "Applewood", "Blackthorn", "Chestnut", "Dogwood", "Elder", "Hornbeam", "Laurel", "Rowan", "Silver Lime"],
+  "length": ["5 in.", "6 in.", "7 in.", "8 in", "9 in"],
+  "flexibility": ["Surprisingly swishy", "Slightly springy", "Brittle", "Unyielding"]
+}
