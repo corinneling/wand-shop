@@ -9,7 +9,7 @@ While we all know every wizard needs a wand, we don't often think of what happen
 
 ![Ron](/ollivanders/ronald.gif)
 
-But, you're not! You don't have to worry about turning puking up slugs, or accidently blowing things up anymore. Clone this repo and run `rake start`. Then Ollivander will ask you details about your wand, so he can better repair it.
+But, you're not! You don't have to worry about puking up slugs, or accidentally blowing things up anymore. Clone this repo and run `rake start`. Then Ollivander will ask you details about your wand, so he can better repair it.
 
 ## Project Info
 
