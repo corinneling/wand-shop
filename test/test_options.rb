@@ -1,6 +1,3 @@
-require 'minitest/autorun'
-require 'minitest/pride'
-
 require './ollivanders/options'
 
 class TestOptions < Minitest::Test

@@ -1,5 +1,3 @@
-require 'minitest/autorun'
-require 'minitest/pride'
 
 require './ollivanders/start.rb'
 
