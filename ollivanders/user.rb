@@ -6,8 +6,8 @@ module User
       gets.chomp.to_i - 1
     end
 
-    def choose_element n
-      @choice = show_elements(n)[ get_user_input ]
+    def choose_element index
+      @choice = show_elements(index)[ get_user_input ]
       puts "You chose #{@choice}"
     end
 
