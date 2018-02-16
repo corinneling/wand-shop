@@ -8,7 +8,7 @@ module Options
         show_spells_intro
       else
      # elements.keys takes the keys of the JSON turned hash elements
-      puts "\nWhat is the #{key} of your wand?"
+      puts "\nWhat is the #{key} of your wand?\n"
       end
     end
 

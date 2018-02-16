@@ -19,9 +19,11 @@ module User
         @spells = []
         show_values(key, value)
         while @spells.length <= 10
+          puts "Any others?"
           @choice = value[ get_user_input ]
           if @choice == 'Avada Kedavra'
             puts "Umm, yeah..I'm going to have to report you to the Aurors for using Avada Kedavra."
+            exit(0)
           else
           @spells << @choice
         end
