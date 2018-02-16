@@ -12,23 +12,23 @@ module User
     # takes in an integer refering to index of keys or values
     # prompts user based on array of values printed & stores choice in a var
     def choose_value key, value
-      if key == :spells
-        puts 'test'
+      if key != :spells
+        choice = show_values(key, value)[ get_user_input ]
+        puts "You chose #{choice}".colorize(:cyan)
       else
-        @choice = show_values(key, value)[ get_user_input ]
-        puts "You chose #{@choice}".colorize(:cyan)
+        @spells = []
+        show_values(key, value)
+        while @spells.length <= 10
+          @choice = value[ get_user_input ]
+          if @choice == 'Avada Kedavra'
+            puts "Umm, yeah..I'm going to have to report you to the Aurors for using Avada Kedavra."
+          else
+          @spells << @choice
+        end
+      end
+        puts "You chose #{@spells.join(", ")}".colorize(:cyan)
       end
     end
-
-    # if user chose Avada Kedavra as a spell they used, prints string
-    # else continues prompting and getting data from user
-    # def report_wizard_to_aurors
-    #   if @choice == "Avada Kedavra"
-    #     puts "Umm, yeah, I'm going to have to report you to the Aurors"
-    #   else
-    #     choose_element index
-    #   end
-    # end
 
     # nice thank you for the user that uses Time.now
     def thank_you
