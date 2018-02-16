@@ -1,4 +1,6 @@
 require_relative 'options'
+require 'colorize'
+
 module User
   include Options
 
@@ -10,8 +12,12 @@ module User
     # takes in an integer refering to index of keys or values
     # prompts user based on array of values printed & stores choice in a var
     def choose_value key, value
-      @choice = show_values(key, value)[ get_user_input ]
-      puts "-----------------------\nYou chose #{@choice}\n-----------------------"
+      if key == :spells
+        puts 'test'
+      else
+        @choice = show_values(key, value)[ get_user_input ]
+        puts "You chose #{@choice}".colorize(:cyan)
+      end
     end
 
     # if user chose Avada Kedavra as a spell they used, prints string
