@@ -13,6 +13,6 @@ But, you're not! You don't have to worry about puking up slugs, or accidentally 
 
 ## Project Info
 
-Project: To create a new program similar to hot dog stand, see original prompt(https://github.com/corinneling/ruby-and-hot-dogs), from the ground up with TDD. I decided to change changed content from hot dogs to wands.
+Project: To create a new program similar to hot dog stand, see [original prompt](https://github.com/corinneling/ruby-and-hot-dogs), from the ground up with TDD. I decided to change changed content from hot dogs to wands.
 
 Tools: Minitest, Code Climate, SimpleCov, Travis CI
