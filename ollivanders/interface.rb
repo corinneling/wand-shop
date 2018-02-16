@@ -14,6 +14,7 @@ class Interface
     def get_customer_info
       # put a loop here to go through all of the keys and all of the elements
       puts WELCOME
+      puts GREET
       get_questions_n_responses
       thank_you
     end
